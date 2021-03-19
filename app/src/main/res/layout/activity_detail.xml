@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="20dp">
+
+    <ImageView
+        android:id="@+id/dProfilePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/dUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/dProfilePic"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="sample name" />
+
+    <TextView
+        android:id="@+id/dTweetBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dProfileName"
+        android:layout_marginTop="10dp"
+        android:autoLink="all"
+        android:ellipsize="none"
+        android:linksClickable="true"
+        android:textSize="20sp"
+        tools:text="sample text here" />
+
+    <TextView
+        android:id="@+id/dProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dUserName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/dProfilePic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="1dp"
+        android:textSize="16sp"
+        tools:text="profile name" />
+
+    <TextView
+        android:id="@+id/dTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dTweetBody"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        tools:text=" time here" />
+
+</RelativeLayout>
